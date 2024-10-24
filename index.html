@@ -20,9 +20,11 @@
     <title>Weather Tracker</title>
   </head>
   <body class="bg-sky-100">
-    <div class="m-auto align-middle items-center">
+    <div class="align-middle items-center relative">
       <!-- header start -->
-      <header class="flex flex-row justify-between items-center mb-3 p-2">
+      <header
+        class="w-[95%] mx-auto flex flex-row justify-between items-center mb-3 p-2"
+      >
         <div class="flex items-center">
           <img
             src="./image/Header/logo.png"
@@ -58,61 +60,76 @@
       </header>
       <!-- header end -->
 
-      <!-- main start -->
-      <main class="flex flex-row justify-center items-center gap-5">
-        <!-- nav bar -->
-        <div class="bg-white rounded-2xl shadow-md p-5 w-[7%]">
-          <div class="flex flex-col justify-center items-center gap-8 py-[90%]">
-            <img
-              src="./image/Header/Search-Icon.png "
-              class="w-10 text-gray-500 bg-white hover:bg-sky-200 hover:rounded-xl hover:p-2"
-              alt=""
-            />
-            <img
-              src="./image/main/nav_bar/day-10-on-calendar-page 1.png"
-              class="w-10 bg-white hover:bg-sky-200 hover:rounded-xl hover:p-2"
-              alt=""
-            />
-            <img
-              src="./image/main/nav_bar/radar 1.png"
-              class="w-14 bg-white hover:bg-sky-200 hover:rounded-xl hover:p-2"
-              alt=""
-            />
-            <img
-              src="./image/main/nav_bar/about-12-48 1.png"
-              class="w-14 bg-white hover:bg-sky-200 hover:rounded-xl hover:p-2"
-              alt=""
-            />
-          </div>
+      <!-- nav bar start -->
+      <div
+        class="bg-white rounded-2xl shadow-xl lg:p-3 text-center lg:h-[260px] lg:w-[70px] top-[30%] left-[2%] max-lg:w-[300px] max-lg:h-[50px] max-lg:top-[90%] max-lg:left-[30%] fixed"
+      >
+        <div
+          class="flex flex-col justify-center items-center gap-8 md:py-0 mt-1 max-lg:flex-row max-lg:mt-2"
+        >
+          <img
+            src="./image/Header/Search-Icon.png "
+            class="w-8 text-gray-500 hover:shadow-lg bg-white hover:bg-sky-200 hover:rounded-xl hover:w-10 hover:p-2 hover:border-blue-900"
+            alt=""
+          />
+          <img
+            src="./image/main/nav_bar/day-10-on-calendar-page 1.png"
+            class="w-8 text-black hover:shadow-lg bg-white hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
+            alt=""
+          />
+          <img
+            src="./image/main/nav_bar/radar 1.png"
+            class="w-8 bg-white hover:shadow-lg hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
+            alt=""
+          />
+          <img
+            src="./image/main/nav_bar/about-12-48 1.png"
+            class="w-8 bg-white hover:shadow-lg hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
+            alt=""
+          />
         </div>
+      </div>
+      <!-- nav bar end -->
 
+      <!-- main start -->
+      <main
+        class="flex flex-row justify-evenly items-center gap-14 ml-32 mr-10"
+      >
         <!-- main weather section -->
-        <div class="w-[100%]">
+        <div class="w-[100%] text-shadow-2">
           <div
             class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-3xl shadow-lg p-6 text-white mb-6"
           >
             <div class="flex justify-between items-start">
               <div class="font-poppins">
-                <h2 class="text-4xl font-bold mb-2">Kolkata</h2>
-                <p class="text-7xl font-bold mb-2">27°C</p>
-                <p class="text-xl mb-4">Day 30°C | Night 10°C</p>
-                <p class="text-xl">Wind: 10 kph</p>
+                <h2 class="text-4xl font-bold mb-2 text-shadow">Kolkata</h2>
+                <p class="text-7xl font-bold mb-2 text-shadow">27°C</p>
+                <p class="text-xl mb-4 text-shadow">Day 30°C | Night 10°C</p>
+                <p class="text-xl text-shadow">Wind: 10 kph</p>
               </div>
 
-              <div class="ml-44 mt-4">
-                <p class="text-3xl font-bold mr-10 -mt-4">Now</p>
+              <div class="ml-44 max-sm:ml-20 mt-4">
+                <p class="text-3xl font-bold mr-10 -mt-4 text-shadow">Now</p>
               </div>
 
-              <div class="text-right">
+              <div class="text-right max-sm:-ml-10 max-sm:mt-4">
                 <div class="flex items-center justify-end -mr-3">
-                  <img src="./image/main/main-weather-image.png" class="w-60" alt="" />
+                  <img
+                    src="./image/main/main-weather-image.png"
+                    class="w-60"
+                    alt=""
+                  />
                 </div>
-                <p class="text-xl font-bold mr-10">Feels like 30°C</p>
+                <p class="text-xl font-bold mr-10 text-shadow">
+                  Feels like 30°C
+                </p>
               </div>
             </div>
           </div>
 
-          <div class="grid grid-cols-7 gap-4 mb-3">
+          <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+          <div class="flex flex-row gap-5 mb-4 w-[100%]">
             <div class="bg-white rounded-2xl shadow-md p-4 text-center">
               <p class="text-gray-700 mb-2 font-bold">1pm</p>
               <img
@@ -178,17 +195,17 @@
             </div>
           </div>
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+          <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-          <div class="grid grid-cols-7 gap-4">
+          <div class="flex flex-row flex-1 gap-4">
             <div class="bg-white rounded-2xl shadow-md p-4 text-center">
               <img
                 src="./image/main/temperature_image/Wind.png"
                 class="w-14 h-14 mx-auto text-gray-400 mb-2"
                 alt=""
               />
-              <p class="text-xl font-bold text-gray-800 -m-2">12 kph</p>
-              <div class="flex flex-1 items-center mt-2 mr-3">
+              <p class="text-xl font-bold text-gray-800 -mt-2">12 kph</p>
+              <div class="flex flex-1 justify-center items-center mt-1 mr-3">
                 <img
                   src="./image/main/temperature_image/Rain.png"
                   class="w-8 h-8 mx-auto"
@@ -203,8 +220,8 @@
                 class="w-14 h-14 mx-auto text-gray-400 mb-2"
                 alt=""
               />
-              <p class="text-xl font-bold text-gray-800 -m-2">14 kph</p>
-              <div class="flex flex-1 items-center mt-2 mr-3">
+              <p class="text-xl font-bold text-gray-800 -mt-2">14 kph</p>
+              <div class="flex flex-1 justify-center items-center mt-1 mr-3">
                 <img
                   src="./image/main/temperature_image/Rain.png"
                   class="w-8 h-8 mx-auto"
@@ -219,14 +236,14 @@
                 class="w-14 h-14 mx-auto text-gray-400 mb-2"
                 alt=""
               />
-              <p class="text-xl font-bold text-gray-800 -m-2">17 kph</p>
-              <div class="flex flex-1 items-center mt-[10px] mr-3">
+              <p class="text-xl font-bold text-gray-800 -mt-2">17 kph</p>
+              <div class="flex flex-1 justify-center items-center mt-1 mr-3">
                 <img
                   src="./image/main/temperature_image/Rain.png"
                   class="w-8 h-8 mx-auto"
                   alt=""
                 />
-              <p class="text-blue-500 text-xl font-bold">30%</p>
+                <p class="text-blue-500 text-xl font-bold">30%</p>
               </div>
             </div>
             <div class="bg-white rounded-2xl shadow-md p-4 text-center">
@@ -235,14 +252,14 @@
                 class="w-14 h-14 mx-auto text-gray-400 mb-2"
                 alt=""
               />
-              <p class="text-xl font-bold text-gray-800 -m-2">17 kph</p>
-              <div class="flex flex-1 items-center mt-3 mr-3">
+              <p class="text-xl font-bold text-gray-800 -mt-2">17 kph</p>
+              <div class="flex flex-1 justify-center items-center mt-1 mr-3">
                 <img
                   src="./image/main/temperature_image/Rain.png"
                   class="w-8 h-8 mx-auto"
                   alt=""
                 />
-              <p class="text-blue-500 text-xl font-bold">50%</p>
+                <p class="text-blue-500 text-xl font-bold">50%</p>
               </div>
             </div>
             <div class="bg-white rounded-2xl shadow-md p-4 text-center">
@@ -251,14 +268,14 @@
                 class="w-14 h-14 mx-auto text-gray-400 mb-2"
                 alt=""
               />
-              <p class="text-xl font-bold text-gray-800 -m-2">19 kph</p>
-              <div class="flex flex-1 items-center mt-3 mr-3">
+              <p class="text-xl font-bold text-gray-800 -mt-2">19 kph</p>
+              <div class="flex flex-1 justify-center items-center mt-1 mr-3">
                 <img
                   src="./image/main/temperature_image/Rain.png"
                   class="w-8 h-8 mx-auto"
                   alt=""
                 />
-              <p class="text-blue-500 text-xl font-bold">90%</p>
+                <p class="text-blue-500 text-xl font-bold">90%</p>
               </div>
             </div>
             <div class="bg-white rounded-2xl shadow-md p-4 text-center">
@@ -268,13 +285,13 @@
                 alt=""
               />
               <p class="text-xl font-bold text-gray-800 -mt-2">20 kph</p>
-              <div class="flex flex-1 items-center mt-1 mr-3">
+              <div class="flex flex-1 justify-center items-center mt-1 mr-3">
                 <img
                   src="./image/main/temperature_image/Rain.png"
                   class="w-8 h-8 mx-auto"
                   alt=""
                 />
-              <p class="text-blue-500  font-bold text-xl">100%</p>
+                <p class="text-blue-500 font-bold text-xl">100%</p>
               </div>
             </div>
             <div class="bg-white rounded-2xl shadow-md p-4 text-center">
@@ -284,35 +301,41 @@
                 alt=""
               />
               <p class="text-xl font-bold text-gray-800 -mt-2">21 kph</p>
-              <div class="flex flex-1 items-center mt-1 mr-3">
+              <div class="flex flex-1 justify-center items-center mt-1 mr-3">
                 <img
                   src="./image/main/temperature_image/Rain.png"
                   class="w-8 h-8 mx-auto"
                   alt=""
                 />
-              <p class="text-blue-500 font-bold text-xl">20%</p>
+                <p class="text-blue-500 font-bold text-xl">20%</p>
               </div>
             </div>
           </div>
         </div>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <!-- date and time -->
-        <div class="flex flex-col items-center w-[250px]  mb-20">
+        <div class="flex flex-col justify-center items-center]">
           <!-- time -->
-          <div class="-mt-6 flex px-14 py-5 pt-3 justify-end w-[250px] h-[300px] mb-8">
-            <div class="bg-white rounded-2xl p-9 shadow-md text-center">
+          <div class="flex pt-3 justify-center w-[100%] h-[230px] mb-8">
+            <div
+              class="bg-white rounded-2xl shadow-md text-center w-[182px] text-shadow"
+            >
               <p class="text-[64px] font-bold text-purple-600">12</p>
               <p class="text-[64px] font-bold text-purple-600 -mt-6">00</p>
               <p class="text-2xl font-bold text-gray-800">PM</p>
             </div>
           </div>
 
-          <!-- time -->
-          <div class="mt-6 flex justify-end">
-            <div class="bg-white rounded-2xl shadow-md p-4 text-center">
-              <p class="text-[64px] font-bold text-purple-600">19<span class="text-3xl align-top">th</span>
+          <!-- date -->
+          <div class="mt-6 flex justify-center w-[100%] text-shadow">
+            <div
+              class="bg-white rounded-2xl shadow-md p-4 text-center w-[182px]"
+            >
+              <p class="text-xl text-gray-800 font-bold">2024</p>
+              <p class="text-[64px] font-bold text-purple-600">
+                24<span class="text-3xl align-top">th</span>
               </p>
               <p class="text-2xl font-bold text-gray-800">September</p>
               <p class="text-xl text-blue-500">Thursday</p>
@@ -321,7 +344,610 @@
         </div>
       </main>
       <!-- main end -->
+
+      <!-- 1st section start -->
+      <section class="ml-24 mr-5">
+        <div class="rounded-3xl mt-10">
+          <div class="flex flex-1">
+            <!-- Main Content -->
+            <div class="flex-1 p-6 bg-sky-100">
+              <div class="flex flex-row items-center gap-12">
+                <!-- Today's Highlights -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg w-96 text-black">
+                  <h2 class="text-xl text-center font-bold mb-5">
+                    Today's Highlights
+                  </h2>
+                  <div class="flex flex-col flex-1">
+                    <div class="flex justify-between items-center gap-5 ml-1">
+                      <span class="flex items-center text-blue-600 font-bold"
+                        ><img
+                          src="./image/today_highlight/Humidity.png"
+                          alt=""
+                        />
+                        Humidity</span
+                      >
+                      <span class="font-bold">70%</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                      <span class="flex items-center text-blue-600 font-bold"
+                        ><img
+                          src="./image/today_highlight/Pressure.png"
+                          alt=""
+                        />
+                        Pressure</span
+                      >
+                      <span class="font-bold">1003.4 mb</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                      <span class="flex items-center text-blue-600 font-bold"
+                        ><img
+                          src="./image/today_highlight/Visibility.png"
+                          alt=""
+                        />
+                        Visibility</span
+                      >
+                      <span class="font-bold">8.05 km</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5 -ml-1">
+                      <span class="flex items-center text-blue-600 font-bold"
+                        ><img
+                          src="./image/today_highlight/UV_Index.png"
+                          alt=""
+                        />
+                        UV Index</span
+                      >
+                      <span class="font-bold">9 of 11</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5 ml-1">
+                      <span class="flex items-center text-blue-600 font-bold"
+                        ><img
+                          src="./image/today_highlight/Dew_point.png"
+                          class="pr-2"
+                          alt=""
+                        />
+                        Dew Point</span
+                      >
+                      <span class="font-bold">28°</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Air Quality Index -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg w-96">
+                  <h2 class="text-xl font-bold mb-4">Air Quality Index</h2>
+                  <div class="flex flex-col items-center">
+                    <div class="relative w-48 h-24 flex flex-col items-center">
+                      <div
+                        class="relative w-24 h-24 rounded-full bg-[conic-gradient(#22C55E_0%_75%,#e0e0e0_75%)] flex justify-center items-center mx-auto"
+                      >
+                        <p class="text-4xl font-bold">5</p>
+                      </div>
+                    </div>
+                    <p class="text-green-500 font-bold mt-2">Good</p>
+                    <p class="text-sm text-gray-500 text-center mt-2">
+                      Good air quality May cause minor breathing discomfort to
+                      sensitive people
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Sun Chart -->
+                <!-- <div class="bg-white p-6 rounded-3xl shadow">
+                  <h2 class="text-xl font-bold mb-4">Sun Chart</h2>
+                  <div class="relative h-40">
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <svg class="w-full h-full" viewBox="0 0 100 50">
+                        <path
+                          d="M 5 45 A 45 45 0 0 1 95 45"
+                          fill="none"
+                          stroke="#fbbf24"
+                          stroke-width="4"
+                        />
+                        <circle cx="50" cy="45" r="8" fill="#fbbf24" />
+                      </svg>
+                    </div>
+                    <div class="absolute bottom-0 left-0">
+                      <p class="text-sm font-semibold">05:24</p>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                      <p class="text-sm font-semibold">17:34</p>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Sun Chart Container -->
+                <div
+                  class="bg-white p-6 rounded-3xl shadow-lg w-96 h-[268px] text-center"
+                >
+                  <h2 class="text-lg font-semibold mb-10">Sun Chart</h2>
+
+                  <!-- Sun Arc -->
+                  <div class="relative">
+                    <!-- Semi-Circle Arc -->
+                    <div
+                      class="w-40 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-t-full mx-auto"
+                    ></div>
+
+                    <!-- Sun Icon (at the center of the arc) -->
+                    <div
+                      class="absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-3 w-12 h-12 rounded-full flex items-center justify-center"
+                    >
+                      <img src="./image/Icon.png" alt="" />
+                    </div>
+                  </div>
+
+                  <!-- Sunrise and Sunset Times -->
+                  <div
+                    class="flex justify-between mt-4 text-gray-800 font-semibold"
+                  >
+                    <div class="text-sm">
+                      <p>05:24</p>
+                      <p>Sunrise</p>
+                    </div>
+                    <div class="text-sm">
+                      <p>17:34</p>
+                      <p>Sunset</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 10 Days Highlights -->
+              <div class="mt-6">
+                <h2 class="text-xl font-bold mb-4">10 Days Highlights</h2>
+                <div class="grid grid-cols-2 grid-rows-5 gap-4">
+                  <!-- Repeat this block for each day -->
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white px-10 rounded-xl shadow flex gap-10 justify-between items-center"
+                  >
+                    <p class="font-semibold">Sat 21</p>
+                    <p class="text-lg font-bold">35°/29°</p>
+                    <div class="flex items-center justify-between mt-2">
+                      <img src="./image/weather_ICON/sunny.png" alt="" />
+                      <span class="text-sm">Sunny</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                      <img
+                        src="./image/main/temperature_image/Rain.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">15%</p>
+                      <img
+                        src="./image/main/temperature_image/Wind.png"
+                        class="w-14"
+                        alt=""
+                      />
+                      <p class="text-lg">NW 5km/h</p>
+                    </div>
+                  </div>
+                  <!-- Repeat the above block for the remaining 9 days -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- 2nd secction start -->
+    <section>
+      <div class="ml-32 rounded-3xl my-20">
+        <h1 class="text-2xl text-center p-5 font-semibold">Kolkata</h1>
+        <!-- Google Map Embed using iframe -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120689.227757458!2d88.26495122983006!3d22.53540637464969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e1!3m2!1sen!2sin!4v1729751886162!5m2!1sen!2sin"
+          referrerpolicy="no-referrer-when-downgrade"
+          width="1250"
+          height="750"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+    <!-- 2nd section end -->
+
+    <!-- 3rd Section start -->
+    <section>
+      <!-- Heading Section -->
+      <div class="text-center py-4">
+        <div class="flex justify-center items-center space-x-2">
+          <img
+            src="./image/team_logo/logo.webp"
+            class="w-24 rounded-full border-gray-50 border-8 shadow-2xl"
+            alt="Team Logo"
+            class="rounded-full"
+          />
+          <div>
+            <p class="text-xl text-gray-500">Made by</p>
+            <h1 class="text-3xl font-bold text-blue-700">TEAM SPUTNIK</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Members Section -->
+      <section class="text-center my-8">
+        <h2 class="text-3xl font-bold text-gray-700">Our Team Members</h2>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 max-w-5xl mx-auto"
+        >
+          <!-- Member 1 -->
+          <div class="bg-white shadow-lg rounded-lg p-4">
+            <div class="flex justify-center mb-4">
+              <div class="bg-gray-200 rounded-full p-6">
+                <svg
+                  class="w-10 h-10 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zM12 14l6.16-3.422A12.042 12.042 0 0112 19.93a12.042 12.042 0 01-6.16-9.352L12 14z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900">Member-Name</h3>
+            <p class="text-sm text-gray-500">
+              Associate Frontend and Backend Developer
+            </p>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="bg-white shadow-lg rounded-lg p-4">
+            <div class="flex justify-center mb-4">
+              <div class="bg-gray-200 rounded-full p-6">
+                <svg
+                  class="w-10 h-10 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zM12 14l6.16-3.422A12.042 12.042 0 0112 19.93a12.042 12.042 0 01-6.16-9.352L12 14z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900">Member-Name</h3>
+            <p class="text-sm text-gray-500">Frontend Developer</p>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="bg-white shadow-lg rounded-lg p-4">
+            <div class="flex justify-center mb-4">
+              <div class="bg-gray-200 rounded-full p-6">
+                <svg
+                  class="w-10 h-10 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zM12 14l6.16-3.422A12.042 12.042 0 0112 19.93a12.042 12.042 0 01-6.16-9.352L12 14z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900">Member-Name</h3>
+            <p class="text-sm text-gray-500">Backend Developer</p>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="bg-white shadow-lg rounded-lg p-4">
+            <div class="flex justify-center mb-4">
+              <div class="bg-gray-200 rounded-full p-6">
+                <svg
+                  class="w-10 h-10 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zM12 14l6.16-3.422A12.042 12.042 0 0112 19.93a12.042 12.042 0 01-6.16-9.352L12 14z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900">Member-Name</h3>
+            <p class="text-sm text-gray-500">UI/UX Designer and Stylization</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- 3rd section end -->
+    <!-- Footer Section -->
+    <footer class="bg-blue-200 py-4 text-center">
+      <p class="text-sm text-gray-600">
+        --- Contact Information (GitHub links etc.) ---
+      </p>
+    </footer>
+    <!-- footer end -->
 
     <script type="module" src="/main.js"></script>
   </body>
