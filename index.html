@@ -17,13 +17,22 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Weather Tracker</title>
   </head>
   <body class="bg-sky-100">
     <div class="align-middle items-center relative">
       <!-- header start -->
       <header
-        class="w-[95%] mx-auto flex flex-row justify-between items-center mb-3 p-2"
+        class="w-[95%] mx-auto flex flex-row justify-between items-center mb-3 p-2 font-russoOne"
       >
         <div class="flex items-center">
           <img
@@ -31,7 +40,7 @@
             class="w-8 h-8 text-yellow-400 mr-2"
             alt="logo.png"
           />
-          <h1 class="text-2xl font-bold text-sky-500">Aeroaura</h1>
+          <h1 class="text-2xl text-sky-500">Aeroaura</h1>
         </div>
 
         <div class="bg-white rounded-full shadow-md my-6 w-[50%]">
@@ -50,7 +59,9 @@
         </div>
 
         <div class="flex items-center">
-          <span class="mr-2 text-sky-500 font-bold p-2 text-xl">Dark mode</span>
+          <span class="mr-2 text-sky-500 font-semibold p-2 text-xl"
+            >Dark mode</span
+          >
           <div class="w-12 h-6 bg-gray-300 rounded-full p-1 flex items-center">
             <div
               class="bg-white w-4 h-4 rounded-full shadow-md transform translate-x-6"
@@ -62,29 +73,29 @@
 
       <!-- nav bar start -->
       <div
-        class="bg-white rounded-2xl shadow-xl lg:p-3 text-center lg:h-[260px] lg:w-[70px] top-[30%] left-[2%] max-lg:w-[300px] max-lg:h-[50px] max-lg:top-[90%] max-lg:left-[30%] fixed"
+        class="bg-white rounded-2xl shadow-xl lg:p-3 text-center lg:h-[350px] lg:w-[75px] top-[30%] left-[2%] max-lg:w-[300px] max-lg:h-[50px] max-lg:top-[90%] max-lg:left-[30%] fixed"
       >
         <div
-          class="flex flex-col justify-center items-center gap-8 md:py-0 mt-1 max-lg:flex-row max-lg:mt-2"
+          class="flex flex-col justify-center items-center gap-12 md:py-0 mt-4 max-lg:flex-row max-lg:mt-2"
         >
           <img
             src="./image/Header/Search-Icon.png "
-            class="w-8 text-gray-500 hover:shadow-lg bg-white hover:bg-sky-200 hover:rounded-xl hover:w-10 hover:p-2 hover:border-blue-900"
+            class="w-9 text-gray-500 hover:shadow-lg bg-white hover:bg-sky-200 hover:rounded-xl hover:w-10 hover:p-2 hover:border-blue-900"
             alt=""
           />
           <img
             src="./image/main/nav_bar/day-10-on-calendar-page 1.png"
-            class="w-8 text-black hover:shadow-lg bg-white hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
+            class="w-9 text-black hover:shadow-lg bg-white hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
             alt=""
           />
           <img
             src="./image/main/nav_bar/radar 1.png"
-            class="w-8 bg-white hover:shadow-lg hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
+            class="w-9 bg-white hover:shadow-lg hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
             alt=""
           />
           <img
             src="./image/main/nav_bar/about-12-48 1.png"
-            class="w-8 bg-white hover:shadow-lg hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
+            class="w-9 bg-white hover:shadow-lg hover:bg-sky-200 hover:rounded-xl hover:p-2 hover:w-10"
             alt=""
           />
         </div>
@@ -96,7 +107,7 @@
         class="flex flex-row justify-evenly items-center gap-14 ml-32 mr-10"
       >
         <!-- main weather section -->
-        <div class="w-[100%] text-shadow-2">
+        <div class="w-[100%] text-shadow-2 font-poppins">
           <div
             class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-3xl shadow-lg p-6 text-white mb-6"
           >
@@ -120,7 +131,7 @@
                     alt=""
                   />
                 </div>
-                <p class="text-xl font-bold mr-10 text-shadow">
+                <p class="text-xl font-bold mr-10 text-shadow font-poppins">
                   Feels like 30°C
                 </p>
               </div>
@@ -316,28 +327,24 @@
         <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <!-- date and time -->
-        <div class="flex flex-col justify-center items-center]">
+        <div class="flex flex-col justify-center items-center] font-russoOne">
           <!-- time -->
           <div class="flex pt-3 justify-center w-[100%] h-[230px] mb-8">
-            <div
-              class="bg-white rounded-2xl shadow-md text-center w-[182px] text-shadow"
-            >
-              <p class="text-[64px] font-bold text-purple-600">12</p>
-              <p class="text-[64px] font-bold text-purple-600 -mt-6">00</p>
-              <p class="text-2xl font-bold text-gray-800">PM</p>
+            <div class="bg-white rounded-2xl shadow text-center w-[182px]">
+              <p class="text-[68px] text-blue-500">12</p>
+              <p class="text-[68px] text-blue-500 -mt-6">00</p>
+              <p class="text-2xl text-gray-600 -mt-3">PM</p>
             </div>
           </div>
 
           <!-- date -->
-          <div class="mt-6 flex justify-center w-[100%] text-shadow">
+          <div class="mt-6 flex justify-center w-[100%]">
             <div
               class="bg-white rounded-2xl shadow-md p-4 text-center w-[182px]"
             >
-              <p class="text-xl text-gray-800 font-bold">2024</p>
-              <p class="text-[64px] font-bold text-purple-600">
-                24<span class="text-3xl align-top">th</span>
-              </p>
-              <p class="text-2xl font-bold text-gray-800">September</p>
+              <p class="text-xl text-gray-600 font-bold">2024</p>
+              <p class="text-[68px] text-blue-500">24</p>
+              <p class="text-2xl text-gray-600">September</p>
               <p class="text-xl text-blue-500">Thursday</p>
             </div>
           </div>
@@ -346,7 +353,7 @@
       <!-- main end -->
 
       <!-- 1st section start -->
-      <section class="ml-24 mr-5">
+      <section class="ml-24 mr-5 font-poppins">
         <div class="rounded-3xl mt-10">
           <div class="flex flex-1">
             <!-- Main Content -->
@@ -354,7 +361,7 @@
               <div class="flex flex-row items-center gap-12">
                 <!-- Today's Highlights -->
                 <div class="bg-white p-6 rounded-3xl shadow-lg w-96 text-black">
-                  <h2 class="text-xl text-center font-bold mb-5">
+                  <h2 class="text-xl text-center font-bold font-lato mb-5">
                     Today's Highlights
                   </h2>
                   <div class="flex flex-col flex-1">
@@ -414,66 +421,72 @@
 
                 <!-- Air Quality Index -->
                 <div class="bg-white p-6 rounded-3xl shadow-lg w-96">
-                  <h2 class="text-xl font-bold mb-4">Air Quality Index</h2>
+                  <h2 class="text-xl font-bold mb-4 font-lato">
+                    Air Quality Index
+                  </h2>
                   <div class="flex flex-col items-center">
                     <div class="relative w-48 h-24 flex flex-col items-center">
+                      <!-- Outer container with gradient background -->
                       <div
-                        class="relative w-24 h-24 rounded-full bg-[conic-gradient(#22C55E_0%_75%,#e0e0e0_75%)] flex justify-center items-center mx-auto"
+                        class="w-40 h-20 bg-gradient-to-r from-green-500 via-yellow-400 to-red-700 rounded-t-full flex justify-center items-center pt-5"
                       >
-                        <p class="text-4xl font-bold">5</p>
+                        <!-- Inner container with AQI number -->
+                        <div
+                          class="w-[140px] h-[78px] bg-white rounded-t-full flex justify-center"
+                        >
+                          <p class="mt-6 font-bold text-3xl text-green-500">
+                            5
+                          </p>
+                        </div>
                       </div>
                     </div>
                     <p class="text-green-500 font-bold mt-2">Good</p>
-                    <p class="text-sm text-gray-500 text-center mt-2">
-                      Good air quality May cause minor breathing discomfort to
-                      sensitive people
+                    <p class="text-sm text-gray-500 text-center mt-2 font-lato">
+                      Air quality is satisfactory, and air pollution poses
+                      little or no risk.
                     </p>
                   </div>
                 </div>
 
                 <!-- Sun Chart -->
-                <!-- <div class="bg-white p-6 rounded-3xl shadow">
-                  <h2 class="text-xl font-bold mb-4">Sun Chart</h2>
-                  <div class="relative h-40">
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <svg class="w-full h-full" viewBox="0 0 100 50">
-                        <path
-                          d="M 5 45 A 45 45 0 0 1 95 45"
-                          fill="none"
-                          stroke="#fbbf24"
-                          stroke-width="4"
-                        />
-                        <circle cx="50" cy="45" r="8" fill="#fbbf24" />
-                      </svg>
-                    </div>
-                    <div class="absolute bottom-0 left-0">
-                      <p class="text-sm font-semibold">05:24</p>
-                    </div>
-                    <div class="absolute bottom-0 right-0">
-                      <p class="text-sm font-semibold">17:34</p>
-                    </div>
-                  </div>
-                </div> -->
+
                 <!-- Sun Chart Container -->
                 <div
                   class="bg-white p-6 rounded-3xl shadow-lg w-96 h-[268px] text-center"
                 >
-                  <h2 class="text-lg font-semibold mb-10">Sun Chart</h2>
+                  <h2 class="text-lg font-semibold mb-10 font-lato">
+                    Sun Chart
+                  </h2>
 
                   <!-- Sun Arc -->
                   <div class="relative">
                     <!-- Semi-Circle Arc -->
                     <div
-                      class="w-40 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-t-full mx-auto"
-                    ></div>
+                      class="relative w-40 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-t-full mx-auto flex justify-center items-end"
+                    >
+                      <!-- Inner white container with AQI number or content -->
+                      <div
+                        class="w-[150px] h-[75px] bg-white rounded-t-full flex justify-center"
+                      ></div>
+                    </div>
 
                     <!-- Sun Icon (at the center of the arc) -->
                     <div
-                      class="absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-3 w-12 h-12 rounded-full flex items-center justify-center"
+                      class="absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-4 w-12 h-12 rounded-full flex items-center justify-center"
                     >
-                      <img src="./image/Icon.png" alt="" />
+                      <img src="./image/Sun/Icon.png" alt="" />
+                    </div>
+                    <!-- Sun Icon (at the left of the arc) -->
+                    <div
+                      class="absolute top-[95px] left-4 transform translate-x-full -translate-y-2 w-12 h-12 rounded-full flex items-center justify-center"
+                    >
+                      <img src="./image/Sun/Sunrise.png" alt="" />
+                    </div>
+                    <!-- Sun Icon (at the right of the arc) -->
+                    <div
+                      class="absolute top-[95px] left-[175px] transform translate-x-full -translate-y-2 w-12 h-12 rounded-full flex items-center justify-center"
+                    >
+                      <img src="./image/Sun/Sunset.png" alt="" />
                     </div>
                   </div>
 
@@ -796,7 +809,7 @@
     </div>
 
     <!-- 2nd secction start -->
-    <section>
+    <section class="font-lato">
       <div class="ml-32 rounded-3xl my-20">
         <h1 class="text-2xl text-center p-5 font-semibold">Kolkata</h1>
         <!-- Google Map Embed using iframe -->
@@ -816,10 +829,10 @@
     <!-- 2nd section end -->
 
     <!-- 3rd Section start -->
-    <section>
+    <section class="font-lato">
       <!-- Heading Section -->
       <div class="text-center py-4">
-        <div class="flex justify-center items-center space-x-2">
+        <div class="flex flex-col justify-center items-center space-x-2">
           <img
             src="./image/team_logo/logo.webp"
             class="w-24 rounded-full border-gray-50 border-8 shadow-2xl"
@@ -828,7 +841,9 @@
           />
           <div>
             <p class="text-xl text-gray-500">Made by</p>
-            <h1 class="text-3xl font-bold text-blue-700">TEAM SPUTNIK</h1>
+            <h1 class="text-3xl font-bold text-blue-700 font-russoOne">
+              TEAM SPUTNIK
+            </h1>
           </div>
         </div>
       </div>
@@ -863,6 +878,11 @@
             <h3 class="text-lg font-medium text-gray-900">Member-Name</h3>
             <p class="text-sm text-gray-500">
               Associate Frontend and Backend Developer
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium sunt magnam doloribus pariatur ullam aut modi, vel unde
+              sint explicabo architecto fugiat nisi, odit dolores.
             </p>
           </div>
 
@@ -942,7 +962,7 @@
     </section>
     <!-- 3rd section end -->
     <!-- Footer Section -->
-    <footer class="bg-blue-200 py-4 text-center">
+    <footer class="bg-blue-200 py-4 text-center font-lato">
       <p class="text-sm text-gray-600">
         --- Contact Information (GitHub links etc.) ---
       </p>
